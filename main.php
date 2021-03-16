@@ -103,8 +103,8 @@ function listContacts($username,$link) {
             body{ font: 14px sans-serif; text-align: center; }
         </style>
         <title>Chat</title>
-        <link rel="stylesheet" href="Style/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Style/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="Style/css/style.css">
         <script src="Style/js/jquery.min.js"></script>
         <script src="Style/js/mCustomScrollbar.min.js"></script>
@@ -115,7 +115,7 @@ function listContacts($username,$link) {
             <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
         </div>
         <p>
-            <a href="../../processing/logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+            <a href="./processing/logout.php" class="btn btn-danger">Sign Out of Your Account</a>
         </p>
             <div class="row justify-content-center h-100">
                 <div class="col-md-4 col-xl-3 chat">

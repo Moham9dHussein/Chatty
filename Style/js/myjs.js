@@ -119,7 +119,7 @@ function send() {
   var div = document.createElement("div");
   div.setAttribute('class', 'd-flex justify-content-end mb-4 kk');
   div.setAttribute('id', "kk");
-  div.innerHTML = '<div class="msg_cotainer_send">'+msg+'<span class="msg_time_send">8:55 AM, Today</span></div><div class="img_cont_msg"><img src="HOME/profil.png" class="rounded-circle user_img_msg"></div>';
+  div.innerHTML = '<div class="msg_cotainer_send">'+msg+'<span class="msg_time_send">8:55 AM, Today</span></div><div class="img_cont_msg"><img src="./images/profil.png" class="rounded-circle user_img_msg"></div>';
   document.getElementById("texarea").value = "";
 document.getElementById("chatBox").appendChild(div);
 var ll = document.querySelectorAll(".kk:last-child")[0].offsetTop;
@@ -151,7 +151,7 @@ var messagesent = document.getElementById("texarea").value;
 
         }
   };
-xhttp.open("POST","../../processing/send.php?q=" + this.head,true);  //Sending request to newfile.php
+xhttp.open("POST","./processing/send.php?q=" + this.head,true);  //Sending request to newfile.php
 xhttp.setRequestHeader("Content-Type", "application/json"); 
 var data = {rname: this.head, message: messagesent};
 xhttp.send(JSON.stringify(data));
@@ -187,7 +187,7 @@ function getmessages(head)
       */
         }
   };
-xhttp.open("GET","../../processing/chat.php?q=" + head,true);  
+xhttp.open("GET","./processing/chat.php?q=" + head,true);  
 xhttp.send();
 }
 
@@ -216,7 +216,7 @@ function sentmessage(sende){
 	var div = document.createElement("div");
 	div.setAttribute('class', 'd-flex justify-content-end mb-4 kk');
 	div.setAttribute('id', "kk");
-	div.innerHTML = '<div class="msg_cotainer_send" >'+sende[0]+'<span class="msg_time_send">'+sende[1]+'</span></div><div class="img_cont_msg"><img src="HOME/profil.png" class="rounded-circle user_img_msg"></div>';
+	div.innerHTML = '<div class="msg_cotainer_send" >'+sende[0]+'<span class="msg_time_send">'+sende[1]+'</span></div><div class="img_cont_msg"><img src="./images/profil.png" class="rounded-circle user_img_msg"></div>';
 	document.getElementById("texarea").value = "";
 	document.getElementById("chatBox").appendChild(div);
 }
@@ -229,7 +229,7 @@ function recivedmessage(recive){
 	var div = document.createElement("div");
 	div.setAttribute('class', 'd-flex justify-content-start mb-4 kk');
 	div.setAttribute('id', "kk");
-	div.innerHTML = '<div class="img_cont_msg"><img src="HOME/profil.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">'+recive[0]+'<span class="msg_time">'+recive[1]+'</span></div>';
+	div.innerHTML = '<div class="img_cont_msg"><img src="./images/profil.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">'+recive[0]+'<span class="msg_time">'+recive[1]+'</span></div>';
 	document.getElementById("texarea").value = "";
 document.getElementById("chatBox").appendChild(div);
 }
@@ -265,7 +265,7 @@ function showHint(str) {
         //document.getElementById("sugg").innerHTML = "<option value="+this.responseText+"> ";
       }
     };
-    xmlhttp.open("GET", "../../processing/gethint.php?q=" + str, true);
+    xmlhttp.open("GET", "./processing/gethint.php?q=" + str, true);
     xmlhttp.send();
   }
 }
@@ -290,7 +290,7 @@ function newchat(head) {
   var newlenght = document.getElementById("myui").getElementsByTagName("li").length;
   var lis = document.createElement("li");
   lis.setAttribute('id', newlenght);
-  lis.innerHTML = '<div class="d-flex bd-highlight"><div class="img_cont"><img src="images/1.png" class="rounded-circle user_img"><span class="online_icon"></span></div><div class="user_info"><span id="user_head'+newlenght+'">'+head+'</span><p>online</p></div></div>';
+  lis.innerHTML = '<div class="d-flex bd-highlight"><div class="img_cont"><img src="./images/1.png" class="rounded-circle user_img"><span class="online_icon"></span></div><div class="user_info"><span id="user_head'+newlenght+'">'+head+'</span><p>online</p></div></div>';
   document.getElementById("myui").appendChild(lis);
 
 }
