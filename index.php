@@ -196,10 +196,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <script src="Style/js/select2.min.js"></script>
     <!--===============================================================================================-->
     <script src="Style/js/moment.min.js"></script>
-    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="Style/js/daterangepicker.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/countdowntime/countdowntime.js"></script>
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+    <script src="Style/js/countdowntime.js"></script>
+    <!--===============================================================================================
+    <script src="js/main.js"></script>-->
   </body>
 </html>
