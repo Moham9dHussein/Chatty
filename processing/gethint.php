@@ -5,12 +5,8 @@
 session_start();
 
 require_once "config.php";  
-//echo $_GET["q"];
 $receiver = $_REQUEST["q"];
 $username = $_SESSION["username"];
-//echo $receiver;
-//$receiver = "asder";
-//$username = "admin";
 
 
 
