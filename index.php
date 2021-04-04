@@ -77,11 +77,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Whatsapp</title>
+    <title>Chatty</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/whatsapp.png" />
+    <link rel="icon" type="image/png" href="images/message.png" />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"

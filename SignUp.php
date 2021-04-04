@@ -95,7 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     .img-container {
       text-align: center;
     }
-    .whatsapp {
+    .mes {
       width: 60px;
       height: 60px;
       margin: 5px 0;
@@ -166,7 +166,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <form id="regForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
       <div class="img-container">
         <a href="index.php">
-          <img src="./images/1.png" alt="Login" class="whatsapp" />
+          <img src="./images/1.png" alt="Login" class="mes" />
         </a>
       </div>
       <h1>Sign Up</h1>
