@@ -139,25 +139,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <span class="login100-form-title p-b-70"> Login</span>
             <span class="login100-form-avatar">
-              <img src="images/1.png" alt="AVATAR" />
+              <img src="images/1s.png" alt="AVATAR" />
             </span>
 
             <div
               class="wrap-input100 validate-input m-t-85 m-b-35 <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>"
               data-validate="Enter username"
             >
-              <input class="input100" type="text" name="username" value="<?php echo $username; ?>"/>
+              <input class="input100" type="text" name="username" value="<?php echo $username; ?>" placeholder="Username"/>
               <span class="help-block"><?php echo $username_err; ?></span>
-              <span class="focus-input100" data-placeholder="Username"></span>
+               <!--<span class="focus-input100" placeholder="Username"></span>-->
             </div>
 
             <div
               class="wrap-input100 validate-input m-b-50 <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>"
               data-validate="Enter password" 
             >
-              <input class="input100" type="password" name="pass" />
+              <input class="input100" type="password" name="pass" placeholder="Password"/>
               <span class="help-block"><?php echo $password_err; ?></span>
-              <span class="focus-input100" data-placeholder="Password"></span>
+              <!--<span class="focus-input100" data-placeholder="Password"></span>-->
             </div>
 
             <div class="container-login100-form-btn">

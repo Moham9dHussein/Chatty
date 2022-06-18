@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             if(mysqli_stmt_execute($stmt)){
             
-                header("location: Login.php");
+                header("location: index.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -166,7 +166,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <form id="regForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
       <div class="img-container">
         <a href="index.php">
-          <img src="./images/1.png" alt="Login" class="mes" />
+          <img src="./images/1s.png" alt="Login" class="mes" />
         </a>
       </div>
       <h1>Sign Up</h1>
