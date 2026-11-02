@@ -1,0 +1,5 @@
+# Language stats: Style/ holds third-party libraries (Bootstrap, jQuery, Select2, ...)
+# and a login-page template, so GitHub skips it. My own front-end code is counted.
+Style/** linguist-vendored
+Style/css/style.css -linguist-vendored
+Style/js/myjs.js -linguist-vendored
